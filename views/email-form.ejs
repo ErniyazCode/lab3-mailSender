@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <title>Mail App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Mail App</h1>
+      <form action="/send-email" method="POST" class="email-form" id="email-form">
+        <input type="email" name="email" id="email" placeholder="Enter recipient email" required/>
+        <textarea name="message" id="message" rows="5" placeholder="Enter your message" required></textarea>
+        <button type="submit" id="submit-button">Send Email</button>
+      </form>
+
+      <% if (typeof status !== 'undefined' && status && typeof message !==
+      'undefined' && message) { %>
+      <div class="status-message <%= status %>"><%= message %></div>
+      <% } %>
+
+      <p class="copyright">2023 Erniyaz IT-2209</p>
+    </div>
+  </body>
+</html>

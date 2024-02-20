@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .email-form input,
+  .email-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .email-form input:focus,
+  .email-form textarea:focus {
+    outline: none;
+  }
+  
+  .email-form textarea {
+    resize: vertical;
+  }
+  
+  .email-form button {
+    padding: 10px 20px;
+    background-color: #1b1900;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .email-form button:hover {
+    background-color: #f8830e;
+  }
+  
+  .status-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .status-message.loading {
+    background-color: #f4f4f4;
+    color: #999;
+  }
+  
+  .status-message.success { 
+    background-color: #c65050;
+    color: #ffffff;
+  }
+  
+  .status-message.error {
+    background-color: #f2dede;
+    color: #a94442;
+  }
+  
+  .title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .copyright {
+    font-weight: 400;
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+    text-align: center;
+  }
